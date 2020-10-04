@@ -1,9 +1,13 @@
 # Project Name
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+Monthly Salary Expense Calculator
 
 ## Description
+Prime Week 7 -- Weekend Challenge 
+Duration: 2 Days
 
-Your project description goes here. What problem did you solve? How did you solve it?
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+This Calculator allows a use to add employee records to an array of objects stored in page memory (cleared after reload). The page with create a table dynamicaly as more dat is added, and finally calculate the total monthly cost spent on salary. 
+
+## Built With
+HTML/CSS, JS, Jquery
