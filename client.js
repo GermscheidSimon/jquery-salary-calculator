@@ -14,7 +14,7 @@ function onReady() {
 }
 
 // when this function runs, it creates a new emp obj contaning all the info from the inputs
-// the function then runs the empty form inputs function, adds the employee object to the global employees array
+// the function then runs the emptyforminputs function, adds the employee object to the global employees array
 // and finally calls the appendNewEmployee function
 function addEmployee(arrayOfEmployees) {
     let newEmployee = {
@@ -23,7 +23,9 @@ function addEmployee(arrayOfEmployees) {
         employeeID: $('#employeeID').val(),
         title: $('#title').val(),
         annualSalary: $('#annualSalary').val(),
-        isActive: true
+        isActive: true // future stretch -- this could be adjusted if a record is deleted from the DOM. 
+                       // atm, if there was a terminated record in the employees array, I don't have a way to prevent it from being 
+                       // displayed on the DOM. Would like to only draw employees to the DOM if their isActive key is true. 
     }
     emptyFormInputs();
     employees.push(newEmployee)
