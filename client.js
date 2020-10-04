@@ -21,6 +21,7 @@ function addEmployee(arrayOfEmployees) {
     }
     emptyFormInputs();
     employees.push(newEmployee)
+    appendNewEmployee();
 }
 
 function emptyFormInputs(){
@@ -29,4 +30,20 @@ function emptyFormInputs(){
     $('#employeeID').val('');
     $('#title').val('');
     $('#annualSalary').val('');
+}
+
+function appendNewEmployee() {
+    let employee = employees[employees.length -1]
+
+    $('#listOfRows').append(`
+    <li class="listRow">
+    <ul class="columnHeader">
+        <li>${employee.firstName}</li>
+        <li>${employee.lastName}</li>
+        <li>${employee.employeeID}</li>
+        <li>${employee.title}</li>
+        <li>${employee.annualSalary}</li>
+    </ul>
+    </li>
+    `);
 }

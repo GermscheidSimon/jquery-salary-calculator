@@ -42,3 +42,26 @@ label{
     padding: 10px;
 
 }
+/* list of rows helps me create a table that is really just a bordered ul*/
+#listOfRows{
+    display: inline-flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+#titleRow{
+    font-weight: bolder;
+}
+
+.columnHeader{
+    display: inline-flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.columnHeader li{
+    max-width: 150px;
+    min-width: 150px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid black;
+}
