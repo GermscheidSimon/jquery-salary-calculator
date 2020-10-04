@@ -57,7 +57,7 @@ function appendNewEmployee() {
     </ul>
     </li>
     `);
-    //after drawing object on DOM, store the employee obj in the latest row element
+    //after drawing object on DOM, store the employee obj in the latest row element.
    $('.listRow:last-child').data('empSal', employee.annualSalary)
 
    calcNewMonthly(employee.annualSalary); //this should probably be called in the addNewEmployee function
@@ -66,7 +66,7 @@ function appendNewEmployee() {
 // remove record deletes the row from the DOM, and sends calcNewMonthly a negative 
 // number based on the annual salary of the employee that was removed
 function removeRec() {
-    let employeeData = $(this).parent().parent().parent().data();
+    let employeeData = $(this).parent().parent().parent().data(); // this is kinda silly. should be putting the data in the delete button probably
     calcNewMonthly(employeeData.empSal * -1);
     $(this).parent().parent().remove()
 }
