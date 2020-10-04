@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="client.js"></script>
+    <title>Salaray Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="appContainer">
+        <h1 id="pageTitle">Salary Calculator</h1>
+        <div id="addEmployee">
+            <h1 id="addEmployeeTitle">Add a new employee:</h1>
+            <div id="nameInfo">
+                <label for="firstName">First Name:</label>
+                    <input type="text" placeholder="First Name" id="firstName">
+                <label for="lastName">Last Name:</label>
+                    <input type="text" placeholder="Last Name" id="lastName">
+                <label for="employeeID">Employee ID:</label>
+                    <input type="text" placeholder="Employee ID" id="employeeID">
+            </div>
+            <div id="employeeInfo">
+                <label for="title">Title:</label>
+                    <input type="text" placeholder="Title" id="title">
+                <label for="annualSalary">Annual Salary:</label>
+                    <input type="text" placeholder="Annual Salary" id="annualSalary">
+                    <input type="button" value="Submit" id="addEmplyeeBtn">
+            </div>
+        </div>
+        <div id="displayEmployeesList"></div>
+
+    </div>
+</body>
+</html>
