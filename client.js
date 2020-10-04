@@ -73,7 +73,7 @@ function removeRec() {
 
 // takes in the global monthly, and adds the monthly cost of the employee
 function calcNewMonthly(empSalary) {
-    totalMonthly+= (empSalary / 12) ;
+    totalMonthly+= parseInt(empSalary / 12) ;
     displaySalary();
 }
 
